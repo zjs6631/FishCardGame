@@ -29,26 +29,16 @@ const Fishes = () => {
         let randomIndex;
         let shuffledArr = [];
         let count = 0;
-        while(count != fishList.length - 1){
+        while(count != fishList.length){
             randomIndex = Math.floor(Math.random() * fishList.length);
-            if(shuffledArr.indexOf(fishList[randomIndex] == -1)){
+            if(shuffledArr.indexOf(fishList[randomIndex]) == -1){
+                console.log(fishList[randomIndex] + " added")
                 shuffledArr.push(fishList[randomIndex]);
                 count +=1;
-            } else {
-                randomIndex = Math.floor(Math.random() * fishList.length);
             }
         }
         
-        //while(currentIndex >= 0) {
-            //randomIndex = Math.floor(Math.random() * fishList.length);
-            //let temp = fishList[randomIndex];
-            //fishList[randomIndex] = fishList[currentIndex];
-            //fishList[currentIndex] = temp;
-            //currentIndex-=1;
-        //}
-        
         setFishList(shuffledArr);
-        
         
     }
 
