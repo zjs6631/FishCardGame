@@ -5,14 +5,16 @@ import Fishes from "./Fishes";
 
 
 
+
 const Fish = (props) =>{
-    let link = "../images/fishImages/" + props.img;
+    
     
     return(
-        <div>
-            <image src={require(link)} alt="fishMissing" />
-        </div>
+            <div className="fishCard">
+            <img src={props.img} alt="fishMissing"/>
+            </div>
     )
 }
 
 export default Fish;
+
