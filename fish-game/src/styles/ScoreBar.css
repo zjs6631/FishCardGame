@@ -4,12 +4,20 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
+    
+
 }
 
 .currentScore{
     justify-self: end;
+    
 }
 
 .highScore{
     justify-self: baseline;
+    
+}
+
+.scoreBar p{
+    margin: 10px;
 }
