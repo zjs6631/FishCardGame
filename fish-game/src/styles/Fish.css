@@ -1,6 +1,29 @@
+
 .fishCard img{
-    width: 300px;
-    height: 175px;
-    border-style: solid;
-    border-width: 1px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.fishCard{
+    
+    width: 25%;
+    height: auto;
+    
+}
+
+.fishContainer{
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.gameBody{
+    display: grid;
+    justify-items: center;
 }

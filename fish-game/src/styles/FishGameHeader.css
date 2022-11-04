@@ -1,3 +1,8 @@
 .gameHeader p{
     font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gameHeader .gameDescription{
+    font-size: 15px;
 }

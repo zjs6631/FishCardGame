@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import App from "../App";
+
 import uniqid from "uniqid";
 import americanshad from "../images/fishImages/americanshad.jpg";
 import atlanticcroaker from "../images/fishImages/atlanticcroaker.jpg";
@@ -19,7 +20,7 @@ const Fishes = () => {
     const [fishList, setFishList] = useState([{key: uniqid(), id: uniqid(), name: americanshad}, {key: uniqid(), id: uniqid(), name: atlanticcroaker}, {key: uniqid, id: uniqid(), name: blackdrum},
     {key: uniqid(), id: uniqid(), name: bluefish}, {key: uniqid(), id: uniqid(), name: pigfish}, {key: uniqid(), id: uniqid(), name: pinfish}, {key: uniqid(), id: uniqid(), name: reddrum}, {key: uniqid(), id: uniqid(), name :redporgy},
     {key: uniqid(), id: uniqid(), name: spanishmackerel}, {key: uniqid(), id: uniqid(), name: spottedseatrout}, {key: uniqid(), id: uniqid(), name: vermillionsnapper}, {key: uniqid(), id: uniqid(), name: whitegrunt}]);
-    const [shuffled, setShuffled] = useState(true);
+    
     const [highScoreCount, setHighScoreCount] = useState(0);
     const [currentScoreCount, setCurrentScoreCount] = useState(0);
 
@@ -51,16 +52,18 @@ const Fishes = () => {
         if(currGame.indexOf(e.currentTarget.id) == -1){
             currGame.push(e.currentTarget.id)
             
-            let currScore = currentScoreCount
-            currScore+=1;
+            
+            setCurrentScoreCount(currentScoreCount+1);
+            console.log(currentScoreCount);
             if(currentScoreCount > highScoreCount){
-                setHighScoreCount(currentScoreCount);
+                console.log(currentScoreCount);
+                setHighScoreCount(highScoreCount+1);
             }
-            setCurrentScoreCount(currScore);
+            
         } else {
             setCurrGame([]);
             if(currentScoreCount > highScoreCount){
-                setHighScoreCount(currentScoreCount);
+                setHighScoreCount(highScoreCount + 1);
             }
             setCurrentScoreCount(0);
         }
@@ -72,9 +75,9 @@ const Fishes = () => {
 
 
     return (
-        <div className="fishContainer">
+        <div className="gameBody">
             <ScoreBar highScoreCount={highScoreCount} currentScoreCount={currentScoreCount}/>
-            
+            <div className="fishContainer">
             {fishList.map((fish)=>{
                 
                 return(
@@ -83,7 +86,7 @@ const Fishes = () => {
                 </div>
                 )
             })}
-            
+            </div>
         </div>
     );
  }
