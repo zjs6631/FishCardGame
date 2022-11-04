@@ -54,9 +54,9 @@ const Fishes = () => {
             
             
             setCurrentScoreCount(currentScoreCount+1);
-            console.log(currentScoreCount);
+            
             if(currentScoreCount > highScoreCount){
-                console.log(currentScoreCount);
+                
                 setHighScoreCount(highScoreCount+1);
             }
             
