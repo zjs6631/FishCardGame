@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/FishCardGame/static/css/main.efaddc61.css",
+    "main.js": "/FishCardGame/static/js/main.43ad1d9d.js",
+    "static/js/787.ec707c21.chunk.js": "/FishCardGame/static/js/787.ec707c21.chunk.js",
+    "static/media/vermillionsnapper.jpg": "/FishCardGame/static/media/vermillionsnapper.b5b4bfae75f0c67e10d8.jpg",
+    "static/media/pinfish.jpg": "/FishCardGame/static/media/pinfish.6b7a6b789583a6d887ac.jpg",
+    "static/media/atlanticcroaker.jpg": "/FishCardGame/static/media/atlanticcroaker.d67792bac4a4234f2dd4.jpg",
+    "static/media/bluefish.jpg": "/FishCardGame/static/media/bluefish.eb83df28a482bb0257c7.jpg",
+    "static/media/americanshad.jpg": "/FishCardGame/static/media/americanshad.3c3311d861b4389235fd.jpg",
+    "static/media/blackdrum.jpg": "/FishCardGame/static/media/blackdrum.2acb460f0cfee4d843b2.jpg",
+    "static/media/whitegrunt.jpg": "/FishCardGame/static/media/whitegrunt.7017b91ee2009b6b13b7.jpg",
+    "static/media/pigfish.jpg": "/FishCardGame/static/media/pigfish.b98080ff57ff06e32511.jpg",
+    "static/media/spottedseatrout.jpg": "/FishCardGame/static/media/spottedseatrout.598012a4883abf0ec667.jpg",
+    "static/media/redporgy.jpg": "/FishCardGame/static/media/redporgy.10fdcd1889b0716d352e.jpg",
+    "static/media/reddrum.jpg": "/FishCardGame/static/media/reddrum.297355b5484e8f5e7a1c.jpg",
+    "static/media/spanishmackerel.jpg": "/FishCardGame/static/media/spanishmackerel.adf616c0d8cb50c34b16.jpg",
+    "index.html": "/FishCardGame/index.html",
+    "main.efaddc61.css.map": "/FishCardGame/static/css/main.efaddc61.css.map",
+    "main.43ad1d9d.js.map": "/FishCardGame/static/js/main.43ad1d9d.js.map",
+    "787.ec707c21.chunk.js.map": "/FishCardGame/static/js/787.ec707c21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efaddc61.css",
+    "static/js/main.43ad1d9d.js"
+  ]
+}
